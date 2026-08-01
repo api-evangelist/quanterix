@@ -1,8 +1,27 @@
 aid: quanterix
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/quanterix.png
 name: Quanterix
-description: 'Quanterix is a company surfaced as a portfolio company of bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Quanterix is a life-sciences company that develops ultra-sensitive protein
+  detection technology for the research and clinical diagnostics markets. Its Simoa
+  (Single Molecule Array) digital biomarker platform, delivered through instruments
+  such as the HD-X and Simoa ONE analyzers and consumable assay kits, measures proteins
+  at concentrations far below conventional immunoassays, enabling early-detection
+  research in neurology (including Alzheimer''s blood-based biomarkers), oncology,
+  cardiology, inflammation, and infectious disease. Quanterix was surfaced as a portfolio
+  company of bain-capital-ventures and added to the API Evangelist network. No public
+  developer API, SDK, or documentation surface was found during enrichment; this profile
+  captures the company identity and probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/quanterix/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Life Sciences
+- Diagnostics
+- Biomarkers
+- Digital Health
+- Neurology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/quanterix-domain-security.yml
 - type: Website
   url: https://www.quanterix.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
